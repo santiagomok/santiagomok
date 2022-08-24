@@ -1,0 +1,331 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded and adapted from:
+% https://github.com/posquit0/Awesome-CV
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=1.0cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-orange}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Santiago}{Mok}
+\position{Software Developer{\enskip\cdotp\enskip}FPGA Design Tool}
+\address{San Jose, CA 95118}
+
+\mobile{626.872.8357}
+\email{santiago.mok@gmail.com}
+% \dateofbirth{January 1st, 1970}
+% \homepage{www.santiagomokdev.com}
+% \github{}
+% \linkedin{}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Santiago Mok~~~·~~~Résumé}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+
+\begin{cvparagraph}
+%---------------------------------------------------------
+FPGA Design Tool Software Developer currently at Intel. Over 14+ years of experience developing C++ software in FPGA design tools and EDA. Highly motivated and team collaborator in new software features development cycle. Track record of mentoring other software developers. Experienced in working with geographically distributed and cross functional teams.
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+%	TECHNICAL & SOFT SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+
+\begin{cvskills}
+%---------------------------------------------------------
+	\cvskill
+		{Programming} %Category 
+		{Modern C++, Python, Tcl}
+
+%---------------------------------------------------------
+	\cvskill
+		{Tool/Framework} 
+		{Docker, Kubernetes, Rancher, boost C++, GNU utils, Flask, Django, Swig, Perforce, Git}
+
+%---------------------------------------------------------
+	\cvskill
+		{Best-Practices} 
+		{Peer code-reviews, unit-test, regression test, agile development}
+
+%---------------------------------------------------------
+	\cvskill
+		{Foreign Languages} 
+		{Spanish and Cantonese}
+
+%---------------------------------------------------------
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Professional Experience}
+
+%---------------------------------------------------------
+
+\begin{cventries}
+%---------------------------------------------------------
+	% \cventry
+	% 	{} % Job title
+	% 	{} % Organization
+	% 	{} % Location
+	% 	{} % Date
+	% 	{
+	% 		\begin{cvitems}
+	% 		\end{cvitems}
+	% 	} % Date
+%---------------------------------------------------------
+		% {Sr. Staff Software Engineer} % Job title
+		% {Intel Corp.} % Organization
+		% {San Jose, CA} % Location
+		% {Apr. 2022 - Present} % Date
+		% { % Itemized description
+		% 	\begin{cvitems}
+			% \end{cvitems}
+		% } 
+%---------------------------------------------------------
+	\cventry
+		{Sr. Staff Software Engineer} % Job title
+		{Intel Corp.} % Organization
+		{San Jose, CA} % Location
+		{Apr. 2022 - Present} % Date
+		{ % Itemized description
+			\begin{cvdescription}
+				Supervisor and lead developer in Intel Quartus Prime software development. I lead multiple projects on productivity tools enhancement, Tcl scripting interfaces, web dashboard development, IP license flows, and backward compatibility. A mentor to other Quartus developer on FPGA design flows and internal C++ tool libraries. 
+			\end{cvdescription}
+			\begin{cvitems}
+				\item {Key software developer in user design data model replacement in Quartus; a multi-year effort that require close collaboration with compiler engine.}
+				\item {Engage with feature owner and field engineer to improve usability of new productivity tools.}
+				\item {Supervise and mentor engineer in development of web dashboard (in containerized environment) to monitor progression of new feature productization.}
+				\item {A consultant on many Quartus features support and enhancements in light of new developments.}
+			\end{cvitems}
+		}
+%---------------------------------------------------------
+	\cventry
+		{Staff Software Engineer} % Job title
+		{Intel Corp.} % Organization
+		{San Jose, CA} % Location
+		{Apr. 2017 - Mar. 2022} % Date
+		{ % Itemized description
+			\begin{cvdescription}
+			Lead developer in Quartus hierarchical design infrastructure development. In this role, I worked with system architects and other senior developers to design and implement C++ core libraries and data models to aid modernizing design netlist interfaces for large-scale FPGA devices.\newline
+			\end{cvdescription}
+			\begin{cvitems}
+				\item {Design and implement an abstract interface database access layer to the underlying database for GUI applications and Tcl scripting interface.}
+				\item {Implemented a notification system (in C++) to aid synchronizing design netlist states.}
+				\item {Design a global state machine manager to better manage resources allocated through singleton design patterns in monolithic codebase, 20+ years legacy.}
+				\item {Mentor other developers in Quartus advance hierarchical flows.}
+			\end{cvitems}
+			%
+			\begin{cvsubdescription}
+				Supervisor lead on infrastructure project to validate developer code submission.
+			\end{cvsubdescription}
+			\begin{cvitems}
+				\item {Scope and design RESTful API in Django to verify perforce change submission}
+				\item {Design for extensibility allowing DevOps to extend and configure validation specifications}
+				\item {Mentor junior engineer on infrastructure implementation and test development Key developer in Quartus Hierarchical Design Database Infrastructure}
+			\end{cvitems}
+			%
+			\begin{cvsubdescription}
+				FPGA-as-a-Service development on the Cloud
+			\end{cvsubdescription}
+			\begin{cvitems}
+				\item {Set-up single-host Kubernetes with FPGA device support to model data center service}
+				\item {Create gRPC service for running image classification inference workload}
+				\item {Joint work with Intel colleague presented on Spark+AI 2018 Conference {\href{https://www.youtube.com/watch?v=AMXMfzgN0CY}{link here: https://www.youtube.com/watch?v=AMXMfzgN0CY}}}
+			\end{cvitems}
+		}
+
+%---------------------------------------------------------
+	\cventry
+		{Sr. Software Engineer} % Job title
+		{Intel Corp.} % Organization
+		{San Jose, CA} % Location
+		{Apr. 2015 - Mar. 2017} % Date
+		{ % Itemized description
+			\begin{cvdescription}
+				Lead cross-functional project involving software database with advance HW designer flows.
+			\end{cvdescription}
+			\begin{cvitems}
+				\item {Scope design specifications for database compatibility across software version and align with advance designer flows}
+				\item {Align test engineering with FPGA hardware modeling engineer}
+				\item {Apply C++ boost serialization as persistent storage technique}
+				\item {Implement tools to apply incremental changes from device software model updates Lead infrastructure project to validate developer code submission}
+			\end{cvitems}
+			%
+			\begin{cvsubdescription}
+				Key developer in Quartus Hierarchical Design Database Infrastructure
+			\end{cvsubdescription}
+			\begin{cvitems}
+				\item {Design and implement flows to persist and validate encrypted IP licenses requirement}
+				\item {Implement infrastructure to model partition-based design data and advance user flows}
+				\item {Enhance and migrate database infrastructure}
+				\item {Lead 3 other engineers on design and test development}
+			\end{cvitems}
+		}
+
+%---------------------------------------------------------
+	\cventry
+		{Software Engineer} % Job title
+		{Altera Corp.} % Organization
+		{San Jose, CA} % Location
+		{Apr. 2011 - Mar. 2015} % Date
+		{ % Itemized description
+			\begin{cvdescription}
+				Responsible for software data modeling of FPGA devices in Quartus II software
+			\end{cvdescription}
+			\begin{cvitems}
+				\item {Implemented C++ data structure to model hierarchical connectivity of FPGA blocks}
+				\item {Implemented translation lookup of device model data with python extension}
+				\item {Maintain and promote use of SWIG as interface generator to extend C++ to Python and Tcl}
+				\item {Improved developer productivity by reducing software build time from 8 hours to 4 hours}
+			\end{cvitems}
+		} 
+
+	% \cventry
+	% 	{Title} % Job title
+	% 	{TESTING ORG} % Organization
+	% 	{Location} % Location
+	% 	{Date} % Date
+	% 	{ % Itemized description
+	% 		\begin{cvdescription}
+	% 			Responsible for software data modeling of FPGA devices in Quartus II software
+	% 		\end{cvdescription}
+	% 		\begin{cvitems}
+	% 			\item {Implemented C++ data structure to model hierarchical connectivity of FPGA blocks}
+	% 			\item {Implemented translation lookup of device model data with python extension}
+	% 			\item {Maintain and promote use of SWIG as interface generator to extend C++ to Python and Tcl}
+	% 			\item {Improved developer productivity by reducing software build time from 8 hours to 4 hours}
+	% 		\end{cvitems}
+	% 	} 
+
+%---------------------------------------------------------
+	\cventry
+		{Graduate Research Assistant} % Job title
+		{NanoCAD Lab, UCLA (Prof. Puneet Gupta)} % Organization
+		{Los Angeles, CA} % Location
+		{Sept. 2009 - Mar. 2011} % Date
+		{ % Itemized description
+			\begin{cvitems}
+				\item {VLSI CAD research on gate sizing algorithms to optimize for leakage power on post-layout designs.}
+				\item {Published a comparative study of gate sizing techniques to reduce leakage power.}
+				\item {Contributed incremental STA algorithm and wire delay calculator to open-source timing-analysis engine.}
+			\end{cvitems}
+		}
+
+%---------------------------------------------------------
+\end{cventries}
+
+%%-------------------------------------------------------------------------------
+%%   PUBLICATION 
+%%-------------------------------------------------------------------------------
+\cvsection{Publication}
+
+\begin{cvparagraph}
+%---------------------------------------------------------
+	\textbf{Santiago Mok}, John Lee, Puneet Gupta, ”Post-Layout Sizing for Leakage Power Optimization: A Comparative Study”, in ACM Transaction on Design Automation of Electronic System, Jan. 2013
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+%   EDUCATION 
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+%---------------------------------------------------------
+\cventry
+		{M.S. in Electrical Engineering}  % Degree
+		{University of California Los Angeles (UCLA)} % Institution
+		{Los Angeles, CA} % Location
+		{Sept. 2009 - Mar. 2011} % Date
+		{%
+			\begin{cvitems}
+				\item {Specialization in Digital Circuit Design Automation}
+				\item {Research adviser: Dr. Puneet Gupta ({\href{https://nanocad.ee.ucla.edu}{NanoCAD Research Group}})}
+			\end{cvitems}
+		} 
+
+%---------------------------------------------------------
+	\cventry
+		{B.S. in Electrical and Computer Engineering}  % Degree
+		{University of California Los Angeles (UCLA)} % Institution
+		{Los Angeles, CA} % Location
+		{Sept. 2007 - June 2009} % Date
+		{ % Bullet items
+			\begin{cvitems}
+				\item {Undergraduate Research Fellow Program Scholarship}
+				\item {CEED Research Scholar}
+			\end{cvitems}
+		} 
+
+% ---------------------------------------------------------
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\end{document}
